@@ -1,0 +1,11 @@
+/* decorations */
+
+:root {
+  /* padding */
+  --p1: 0.2rem;
+  --p2: 0.4rem;
+  --p4: 0.8rem;
+  /* radius */
+  --rad-sm: 0.4rem;
+  --rad-lg: 0.8rem;
+}

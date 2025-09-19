@@ -1,0 +1,16 @@
+@import url('reset.css');
+@import url('colors.css');
+@import url('text.css');
+@import url('theme.css');
+@import url('layout.css');
+
+/* body display, avoid FOUC */
+body {
+  /* lighthouse does not like 0 */
+  opacity: 0.0001;
+}
+
+body.ready {
+  opacity: 1;
+  transition: 0.1s opacity;
+}

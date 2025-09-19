@@ -1,0 +1,62 @@
+/* colour theme */
+
+/* scrollbars */
+
+:root {
+  /* colors */
+  --sb-fg: var(--pri-bd);
+  --sb-bg: var(--pri-bg);
+  /* size */
+  --sb-wdt: 7px;
+  --sb-brd: 1px;
+}
+
+::-webkit-scrollbar {
+  width: var(--sb-wdt);
+  height: var(--sb-wdt);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-fg);
+  border: var(--sb-brd) solid var(--sb-bg);
+  border-radius: var(--sb-wdt);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-color: var(--sb-fg);
+}
+
+/* page colours */
+
+body {
+  color: var(--pri-fg);
+  background: var(--pri-bg);
+  font-family: var(--font);
+  a {
+    color: var(--pri-hl);
+  }
+
+  --bt-fg: var(--pri-bg);
+  --bt-bg: var(--pri-hl);
+
+  > header,
+  > footer {
+    color: var(--sec-fg);
+    background: var(--sec-bg);
+    a {
+      color: var(--sec-hl);
+    }
+
+    --bt-fg: var(--sec-bg);
+    --bt-bg: var(--sec-hl);
+  }
+}
+
+button {
+  color: var(--bt-fg);
+  background: var(--bt-bg);
+}

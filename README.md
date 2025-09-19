@@ -8,6 +8,7 @@ The core part of the SeiteLite framework.
 ├── assets/   # logo
 ├── cls/      # php autoloaded classes
 ├── els/      # custom elements
+├── inc/      # include files
 ├── pages/    # error pages
 ├── tpl/      # page templates
 ├── ts/       # TypeScript source

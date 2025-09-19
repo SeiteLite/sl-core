@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "declaration": false,
+    "removeComments": true,
+    "outFile": "../../dist/main.js"
+  },
+  "files": [
+    "types.ts",
+    "vars.ts",
+    "funs.ts",
+    "dev.ts",
+    "proto.ts",
+    "resp.ts",
+    "react.ts",
+    "els.ts",
+    "icons.ts",
+    "epilog.ts"
+  ]
+}

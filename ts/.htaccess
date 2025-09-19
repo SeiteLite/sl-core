@@ -1,0 +1,3 @@
+<FilesMatch "\.(js)$">
+  Require all granted
+</FilesMatch>

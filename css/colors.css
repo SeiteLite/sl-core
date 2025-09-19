@@ -1,0 +1,44 @@
+/*
+  Colours:
+  --------
+  pri/primary
+  sec/secondary (inverted)
+  --------
+  bg/background,
+  fg/foreground,
+  hl/highlighted text
+  tl/tile background
+  bd/border
+*/
+
+/* light (default) */
+:root {
+  --pri-bg: #fff;
+  --pri-fg: #000;
+  --pri-tl: #eee;
+  --pri-bd: #aaa;
+  --pri-hl: #36c;
+
+  --sec-bg: #333;
+  --sec-fg: #fff;
+  --sec-tl: #444;
+  --sec-bd: #666;
+  --sec-hl: #9cf;
+}
+
+/* auto dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pri-bg: #111;
+    --pri-fg: #eee;
+    --pri-tl: #333;
+    --pri-bd: #555;
+    --pri-hl: #9cf;
+
+    --sec-bg: #333;
+    --sec-fg: #eee;
+    --sec-tl: #444;
+    --sec-bd: #666;
+    --sec-hl: #36c;
+  }
+}

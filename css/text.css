@@ -1,0 +1,6 @@
+/* text sizes */
+:root {
+  --tx-sm: 0.8rem;
+  --tx-md: 1rem;
+  --tx-lg: 1.3rem;
+}

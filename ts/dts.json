@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "../../../build/types"
+  },
+  "include": ["./*.ts"],
+  "exclude": ["./*.test.ts"]
+}

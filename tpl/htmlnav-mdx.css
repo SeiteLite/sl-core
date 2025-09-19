@@ -1,0 +1,118 @@
+/* Basic Markdown Styles */
+article {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0.4em 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--pri-bd);
+  }
+
+  h3 {
+    font-size: 1.17em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: 0.83em;
+  }
+
+  h6 {
+    font-size: 0.67em;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0.4em 0;
+  }
+
+  a {
+    color: var(--pri-hl);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ul,
+  ol {
+    list-style-position: inside;
+    padding-left: 1rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  code,
+  pre {
+    background-color: var(--pri-tl);
+    font-family: var(--font-mono);
+  }
+
+  code {
+    padding: 0 var(--p1);
+  }
+
+  pre > code {
+    padding: 0;
+  }
+
+  pre {
+    padding: var(--p2);
+  }
+
+  /* Markdown Extra Styles */
+  table {
+    margin: 1rem 0;
+  }
+
+  table th,
+  table td {
+    border: 1px solid var(--pri-bd);
+    padding: var(--p2);
+  }
+
+  table th {
+    background-color: var(--pri-tl);
+  }
+
+  blockquote {
+    border-left: 4px solid var(--pri-tl);
+    padding-left: var(--p2);
+    margin: 0.2rem 0;
+    font-style: italic;
+  }
+}

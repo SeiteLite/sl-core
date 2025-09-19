@@ -1,0 +1,15 @@
+/* minimal modern stylesheet reset TODO */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}

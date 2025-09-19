@@ -1,0 +1,128 @@
+:root {
+  --hd-hgt: 2rem;
+  --ft-hgt: 2rem;
+  --aside-wdt: 14rem;
+}
+
+/* layout */
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  > aside,
+  > main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > header,
+    > footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: var(--p1);
+      gap: var(--p1);
+      color: var(--sec-fg);
+      background: var(--sec-bg);
+    }
+
+    > header {
+      height: var(--hd-hgt);
+      border-bottom: thin solid var(--sec-bd);
+    }
+
+    #menu {
+      display: none;
+    }
+
+    > footer {
+      height: var(--ft-hgt);
+      border-top: thin solid var(--sec-bd);
+    }
+  }
+
+  > aside {
+    color: var(--sec-fg);
+    background: var(--sec-bg);
+    width: min(var(--aside-wdt), 20%);
+    --sb-fg: var(--sec-bd);
+    --sb-bg: var(--sec-bg);
+    --bt-fg: var(--sec-bg);
+    --bt-bg: var(--sec-hl);
+  }
+
+  > main {
+    flex: 1;
+  }
+
+  > aside > nav,
+  > main > article {
+    flex: 1;
+    overflow-y: scroll;
+    padding: var(--p2);
+  }
+
+  > aside > nav {
+    li {
+      padding: 0.2em;
+    }
+
+    li.selected {
+      color: var(--sec-hl);
+      background: var(--sec-tl);
+    }
+
+    ol[lvl1] {
+      > li {
+        padding-left: 0.8em;
+      }
+      > li::before {
+        display: inline-block;
+        content: '▼';
+        transform: rotate(270deg);
+        padding: 0 var(--p1);
+      }
+      > li.active::before {
+        transform: rotate(0deg);
+      }
+      > li:not(.active) ~ ol {
+        display: none;
+      }
+    }
+
+    ol[lvl2] > li {
+      padding-left: 3em;
+      font-style: normal;
+      font-size: var(--tx-sm);
+    }
+  }
+}
+
+body.MBL {
+  > aside,
+  > main {
+    #menu {
+      display: block;
+    }
+  }
+
+  > aside {
+    position: fixed;
+    width: var(--aside-wdt);
+    transform: translateX(-100%);
+    /* TODO fix: slides out/in on page reload */
+    transition: transform 0.3s;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
